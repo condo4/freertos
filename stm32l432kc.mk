@@ -1,6 +1,7 @@
 CFLAGS          += -I$(FREERTOS_DIR)/include/
 CFLAGS          += -I$(FREERTOS_DIR)/portable/GCC/ARM_CM4F/
 FREEOBJS        += $(FREERTOS_DIR)/portable/GCC/ARM_CM4F/port.o
+FREEOBJS        += $(FREERTOS_DIR)/portable/MemMang/heap_$(FREERTOS_HEAP).o
 FREEOBJS        += $(FREERTOS_DIR)/tasks.o
 FREEOBJS        += $(FREERTOS_DIR)/list.o
 FREEOBJS        += $(FREERTOS_DIR)/queue.o
