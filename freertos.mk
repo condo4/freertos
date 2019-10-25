@@ -17,3 +17,7 @@ $(FREERTOS_DIR)/%.o: $(FREERTOS_DIR)/%.c
 
 $(FREERTOS_DIR)/libfreertos.a: $(FREEOBJS)
 	$(Q)$(AR) rc $(FREERTOS_DIR)/libfreertos.a $(FREEOBJS)
+
+freertos_clean:
+	rm -f $(FREERTOS_DIR)/*.a $(FREERTOS_DIR)/*.o $(FREERTOS_DIR)/*.d  $(FREERTOS_DIR)/*/*/*.o $(FREERTOS_DIR)/*/*/*/*.o
+
